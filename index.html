@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Constitution Snake and Ladder Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Dice Panel -->
+    <div id="dice-panel" class="side-panel">
+      <h2>Roll the Dice</h2>
+      <div id="dice-box">
+        <button id="roll-btn" onclick="rollDice()">🎲 Roll Dice</button>
+        <p id="dice-result">Dice: 🎲</p>
+      </div>
+      <p id="player-position">Player Position: 1</p>
+    </div>
+
+    <!-- Board Section -->
+    <div id="board-container" class="board-section">
+      <div id="snake-ladder-board" class="board"></div>
+    </div>
+
+    <!-- Question Panel -->
+    <div id="question-panel" class="side-panel">
+      <h2>Constitution Question</h2>
+      <div id="question-container">
+        <p id="question-text">Question will appear here...</p>
+        <div id="options-container"></div>
+      </div>
+      <div id="timer" class="timer">Time Left: <span id="time-left">20</span> seconds</div>
+    </div>
+  </div>
+
+  <footer></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
